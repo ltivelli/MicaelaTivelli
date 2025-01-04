@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Artist & Instructor</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Artist & Instructor</title>
+    <style>
+         body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #2c2c2c;
+            color: #d3d3d3;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 90%;
+            border-radius: 10px;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-info a {
+            color: #1e90ff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .inquiries {
+            text-align: center;
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #3b3b3b;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .inquiries h2 {
+            margin-top: 0;
+        }
+        .inquiries form {
+            text-align: left;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        .inquiries label {
+            font-size: 1rem;
+        }
+        .inquiries input, .inquiries textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            background-color: #444;
+            color: #fff;
+        }
+        .inquiries button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .inquiries button:hover {
+            background-color: #0b78e3;
+        }
+        .contact-info a {
+    margin: 0 10px;
+    color: #d3d3d3;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #1e90ff;
+}
+
+    </style>
+    <script>
+        function toggleContent(id) {
+            const element = document.getElementById(id);
+            if (element.style.display === "none" || element.style.display === "") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Clases de Canto Micaela Tivelli</h1>
+        <p>Cantante, Música y Actriz</p>
+    </header>
+
+    <div class="image-container">
+        <img src="./FOTOMICA.jpg" alt="Artist Image" loading="lazy">
+    </div>
+
+    <div class="contact-info">
+        <h2>Contacto</h2>
+        <p>Cel: +5492325590050</p>
+        <a href="mailto:Micativelli3@gmail.com">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+        <a href="https://www.youtube.com/@micaelativelli3752" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://open.spotify.com/artist/08BjSyAWqrZ0YRJOmS1WtR?si=uT6BMgMORdGi6ic8aFu6Ow" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-spotify"></i>
+        </a>
+        <a href="https://www.instagram.com/tivellimicaela?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+    
+      
+        <div class="inquiries">
+            <h2>Consultas Directas</h2>
+            <p>Tus consultas y preguntas serán atendidas lo antes posible, Muchas gracias!</p>
+            <form action="https://formspree.io/f/meoopekl" method="POST">
+                <label for="name">Nombre:</label><br>
+                <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+        
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea><br><br>
+        
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        
+       
+    </div>
+</body>
+</html>
