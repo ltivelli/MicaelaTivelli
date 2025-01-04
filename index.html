@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Clases de Canto - Micaela Tivelli</title>
+        <title>Clases de Canto - Micaela Tivelli</title>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-   <title>Clases de Canto - Micaela Tivelli</title>
+        <title>Clases de Canto - Micaela Tivelli</title>
     <style>
          body {
             font-family: 'Montserrat', sans-serif;
@@ -34,6 +34,14 @@
         .contact-info {
             text-align: center;
             margin: 20px 0;
+        }
+        .video-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video-container video {
+            max-width: 90%;
+            border-radius: 10px;
         }
         .contact-info a {
             color: #1e90ff;
@@ -110,9 +118,15 @@
         <h1>Clases de Canto Micaela Tivelli</h1>
         <p>Cantante, Música y Actriz</p>
     </header>
-
+    <div class="video-container">
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <a href="video.mp4">Download the video</a>
+        </video>
+    </div>
     <div class="image-container">
-        <img src="./photo.jpg" alt="Artist Image" loading="lazy">
+        <img src="photo.jpg" alt="Artist Image" loading="lazy">
     </div>
 
     <div class="contact-info">
